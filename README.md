@@ -1,4 +1,4 @@
-## Android app for receiving uECG data
+## Android app for receiving moyoECG data
 
 This is a major rework of the previous version, with added support of BLE connection and firmware upload capability.
 
@@ -10,4 +10,3 @@ BLE connection code is really bad in this version and needs major rework (it res
 
 Data parsing happens in parse_chr_ecg_data function inside ble_uecg_service.java. Then it goes through ecg_processor class which stores ECG in memory and then broadcasts them to the interface app (if it is active), and saves them to file (if saving mode is turned on).
 
-Other project parts can be found here: https://github.com/ultimaterobotics/uECG 
