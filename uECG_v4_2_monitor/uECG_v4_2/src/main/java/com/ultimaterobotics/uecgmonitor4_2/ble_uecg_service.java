@@ -1,4 +1,4 @@
-package com.ultimaterobotics.uecgmonitor4_2;
+package com.AuroraHealth.moyoecgmonitor4_2;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
