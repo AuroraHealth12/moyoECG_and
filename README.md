@@ -8,5 +8,5 @@ App is divided into interface and service (so that connection isn't lost when wi
 
 BLE connection code is really bad in this version and needs major rework (it restarts BLE until it gets connected - couldn't find another way out of locked state when service discovery fails). Once connection is established, it seems to be rather reliable though.
 
-Data parsing happens in parse_chr_ecg_data function inside ble_uecg_service.java. Then it goes through ecg_processor class which stores ECG in memory and then broadcasts them to the interface app (if it is active), and saves them to file (if saving mode is turned on).
+Data parsing happens in parse_chr_ecg_data function inside ble_moyoecg_service.java. Then it goes through ecg_processor class which stores ECG in memory and then broadcasts them to the interface app , and saves them to file csv (if saving mode is turned on).
 
